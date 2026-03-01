@@ -69,16 +69,12 @@ The architecture is designed to handle high-throughput video streams through the
 * The **YoloDetector** runs locally at the edge on specialized hardware (via the **Vision Agents SDK**) to provide instantaneous bounding boxes.
 * **Cloud inference (Gemini)** is only utilized for non-blocking, post-hoc analysis and "Reasoning Validation" to train the model, ensuring the live stream remains lag-free.
 
----
-
 ### 2. CHALLENGE: High-Fidelity Biometric Evasion
 **The Problem:** Standard computer vision models often fail when faces are obscured (e.g., masks, extreme angles) or in low-light environments. This can lead to PII slipping through the firewall.
 
 **💡 MITIGATION STRATEGY: Multi-Modal Contextual Awareness**
 * Rather than relying solely on a single detector, we integrated a **Multi-Modal Ensemble**.
 * If the `YoloDetector` fails, **Guardnel** engages the **Moondream** vision-language model to analyze holistic scene context (e.g., identifying a "person in a workspace") and proactively applies a generic area blur, prioritizing privacy over raw detection accuracy.
-
----
 
 ### 3. CHALLENGE: Resource & Compute Constraints (Edge Scalability)
 **The Problem:** Edge nodes have limited GPU/CPU resources. Deploying multiple multi-modal agents (YOLO, Moondream) across an entire Stream network could cause node overload and increased operational costs.
@@ -88,14 +84,14 @@ The architecture is designed to handle high-throughput video streams through the
 * In low-resource scenarios, the agent defaults to a "Light Redaction Mode," using only a lightweight YOLO model.
 * When ample resources are detected, the agent autonomously escalates to "High-Fidelity Mode," engaging the full multi-modal reasoning stack.
 
----
-
 ### 4. CHALLENGE: Ethical Redaction & Over-Blurring
 **The Problem:** Over-zealous agents might blur non-sensitive information (like generic background objects), degrading the video quality and breaking the utility of the stream.
 
 **💡 MITIGATION STRATEGY: Human-in-the-Loop Reasoning (Future)**
-* We implemented an **Autonomous Reasoning Confirmation** using **Gemini 1.5 Flash**. The LLM verifies if a redaction decision was necessary.
-* *Future Roadmap:* We plan to integrate a **Human-in-the-Loop** dashboard, allowing an administrator to view and approve questionable redactions. This "validated learning" will fine-tune the agent’s ethical thresholds, reducing false positives.
+* I implemented an **Autonomous Reasoning Confirmation** using **Gemini 1.5 Flash**. The LLM verifies if a redaction decision was necessary.
+---
+
+# Future Roadmap:* I plan to integrate a **Human-in-the-Loop** dashboard, allowing an administrator to view and approve questionable redactions. This "validated learning" will fine-tune the agent’s ethical thresholds, reducing false positives.
 
 ---
 
@@ -111,5 +107,5 @@ Ruchika’s unique trajectory—transitioning from Civil Engineering to an MBA i
 - **DevOps:** Experienced in containerizing AI workloads via Docker and deploying to Google Cloud Platform.
 ---
 #Future Outlook
-Currently actively seeking opportunities in AI Engineering and Data Science, Ruchika is dedicated to building ethical AI protocols that prioritize data integrity. Her work on Guardnel demonstrates her readiness to tackle complex, ultra-low latency challenges in high-stakes environments.
+Currently actively seeking opportunities in AI Engineering, Data Science and core Agentic AI, Ruchika is dedicated to building ethical AI protocols that prioritize data integrity. Her work on Guardnel demonstrates her readiness to tackle complex, ultra-low latency challenges in high-stakes environments.
 ---
