@@ -120,7 +120,7 @@ The architecture is designed to handle high-throughput video streams through the
 **The Problem:** Over-zealous agents might blur non-sensitive information (like generic background objects), degrading the video quality and breaking the utility of the stream.
 
 **💡 MITIGATION STRATEGY: Human-in-the-Loop Reasoning (Future)**
-* I implemented an **Autonomous Reasoning Confirmation** using **Gemini 1.5 Flash**. The LLM verifies if a redaction decision was necessary.
+* I implemented an **Autonomous Reasoning Confirmation** using **Gemini 3 Flash**. The LLM verifies if a redaction decision was necessary.
 ---
 
 ## Future Roadmap: I plan to integrate a **Human-in-the-Loop** dashboard, allowing an administrator to view and approve questionable redactions. This "validated learning" will fine-tune the agent’s ethical thresholds, reducing false positives.
