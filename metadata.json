@@ -1,0 +1,5 @@
+{
+  "name": "Guardnel",
+  "description": "High-tech privacy agent terminal for real-time shield and audit logging.",
+  "requestFramePermissions": ["camera"]
+}
