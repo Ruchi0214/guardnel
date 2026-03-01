@@ -68,6 +68,8 @@ The architecture is designed to handle high-throughput video streams through the
 3.  **Reasoning Layer**: **Gemini 1.5 Flash** analyzes scene context via native APIs.
 4.  **Enforcement Layer**: Triggers an immediate visual mask (blur) and logs the event.
 
+![system architecture](https://github.com/user-attachments/assets/2bd30cbf-84d2-4cea-8847-66b9d2f004a9)
+
 ---
 
 ## 🛠️ TECH STACK
