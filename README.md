@@ -57,9 +57,7 @@ The architecture is designed to handle high-throughput video streams through the
 | **Environmental** | Edge-processing reduces cloud data transfer, lowering carbon footprint. |
 
 ---
-#As a frontier agent built for ultra-low latency environments, developing **Guardnel** presented unique technical hurdles. My mitigation strategies ensure that the system remains robust, ethical, and scalable under extreme load.
-
----
+### As a frontier agent built for ultra-low latency environments, developing **Guardnel** presented unique technical hurdles. My mitigation strategies ensure that the system remains robust, ethical, and scalable under extreme load.
 
 ### 1. CHALLENGE: The Real-Time Paradox (Latency)
 **The Problem:** The core mission requires **<30ms visual masking** to prevent biometric leakage. Traditional cloud inference for **Gemini 1.5 Flash**—which requires a multi-second round trip—would make real-time enforcement impossible.
@@ -91,7 +89,7 @@ The architecture is designed to handle high-throughput video streams through the
 * I implemented an **Autonomous Reasoning Confirmation** using **Gemini 1.5 Flash**. The LLM verifies if a redaction decision was necessary.
 ---
 
-# Future Roadmap:* I plan to integrate a **Human-in-the-Loop** dashboard, allowing an administrator to view and approve questionable redactions. This "validated learning" will fine-tune the agent’s ethical thresholds, reducing false positives.
+## Future Roadmap: I plan to integrate a **Human-in-the-Loop** dashboard, allowing an administrator to view and approve questionable redactions. This "validated learning" will fine-tune the agent’s ethical thresholds, reducing false positives.
 
 ---
 
@@ -106,6 +104,6 @@ Ruchika’s unique trajectory—transitioning from Civil Engineering to an MBA i
 - **Computer Vision:** specialized in YOLOv8 and CNN-based image classifiers for real-time detection.
 - **DevOps:** Experienced in containerizing AI workloads via Docker and deploying to Google Cloud Platform.
 ---
-#Future Outlook
+## Future Outlook
 Currently actively seeking opportunities in AI Engineering, Data Science and core Agentic AI, Ruchika is dedicated to building ethical AI protocols that prioritize data integrity. Her work on Guardnel demonstrates her readiness to tackle complex, ultra-low latency challenges in high-stakes environments.
 ---
