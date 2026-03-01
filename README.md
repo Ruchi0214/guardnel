@@ -27,6 +27,38 @@ Guardnel is a multi-modal agent that "watches" the video stream, "understands" t
 * **Transparent Auditing**: Maintains a live **Privacy Audit Log** for regulatory compliance.
 
 ---
+### ❌ 1. THE EXISTING SYSTEM (Risk)
+
+Current real-time video monitoring and surveillance systems operate on a "Trust-then-Process" model.
+
+#### **Core Flaws:**
+* **Centralized Vulnerability**: Raw, unmasked video feeds are transmitted over the network and stored centrally before any privacy redaction occurs.
+* **The 'Privacy Window'**: There is a significant time delay (seconds or even minutes) between data capture and PII masking. During this window, sensitive biometric data is vulnerable to breaches, leaks, or misuse.
+* **Lack of Autonomy**: Redaction decisions are often manual or rely on rigid, post-processing rules. There is no "ethical intelligence" at the point of capture.
+* **Regulatory Risk**: This architecture creates massive GDPR and ethical compliance liabilities for companies handling live video streams.
+
+---
+
+### ✅ 2. THE PROPOSED SYSTEM (Solution)
+
+We are introducing the **Guardnel** protocol: an autonomous, proactive, "Process-then-Trust" system architected on a **Zero-Trust** model at the edge.
+
+#### **Core Architectural Shift:**
+Instead of redacting data that has already been breached, **Guardnel** redacts *before* the breach can occur.
+
+#### **Key Innovations:**
+* **Autonomous Edge Enforcement**: Guardnel agents watch the video stream locally, at the **Stream Edge Network**. Redaction happens instantly, before a single byte of biometric data leaves the environment.
+* **Ultra-Low Latency (<30ms)**: By utilizing the `YoloDetector` and local inference nodes (powered by the **Vision Agents SDK**), visual masking (blurring) is applied instantaneously to the live feed. There is zero 'Privacy Window'.
+* **Cognitive Ethical Reasoning**: **Gemini 3 Flash** native APIs provide real-time, context-aware reasoning. The agent doesn't just "detect a face"; it "understands" the privacy context and confirms the breach before enforcing the visual mask.
+* **Immutable Compliance (Audit Log)**: Every event—from detection to enforcement—is logged in a secure, immutable **Privacy Audit Log**. This ensures that compliance is automated and auditable, not an afterthought.
+
+---
+
+### 🏆 Executive Level Impact
+* **Existing System:** Reactionary compliance. Data is risky. Company is liable.
+* **Proposed System:** Proactive enforcement. Data is secure. Company is compliant.
+
+This engineering approach directly fulfills the mission objectives of **Vision Agents: Alpha Protocol**, creating an autonomous multi-modal agent for low-latency video intelligence.
 
 ## ⚙️ SYSTEM ARCHITECTURE & DATA FLOW
 The architecture is designed to handle high-throughput video streams through the **Stream Edge Network**.
