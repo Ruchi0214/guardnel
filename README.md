@@ -75,7 +75,7 @@ The architecture is designed to handle high-throughput video streams through the
 ## 🛠️ TECH STACK
 * **Vision SDK**: Vision Agents SDK
 * **AI Models**: YOLOv8 (Detection) & Moondream (Vision-Language)
-* **LLM Intelligence**: Google Gemini 1.5 Flash via Native APIs
+* **LLM Intelligence**: Google Gemini 3 Flash via Native APIs
 * **Frontend**: React (TypeScript), Tailwind CSS, Framer Motion
 * **Cloud Infrastructure**: Google Cloud Run (Containerized via Docker)
 
