@@ -103,7 +103,7 @@ Ruchika’s unique trajectory—transitioning from Civil Engineering to an MBA i
 - **Generative AI:** Expertly implementing Gemini 1.5 Flash and Vision Agents SDK for autonomous reasoning.
 - **Computer Vision:** specialized in YOLOv8 and CNN-based image classifiers for real-time detection.
 - **DevOps:** Experienced in containerizing AI workloads via Docker and deploying to Google Cloud Platform.
----
+
 ## Future Outlook
 Currently actively seeking opportunities in AI Engineering, Data Science and core Agentic AI, Ruchika is dedicated to building ethical AI protocols that prioritize data integrity. Her work on Guardnel demonstrates her readiness to tackle complex, ultra-low latency challenges in high-stakes environments.
 ---
