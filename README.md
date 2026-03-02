@@ -5,12 +5,12 @@
 
 ---
 
-## 🏛️ EXECUTIVE SUMMARY
+### 🏛️ EXECUTIVE SUMMARY
 Presenting **Guardnel** an autonomous "Privacy Firewall" designed for the next frontier of Vision AI. In a world where real-time video surveillance is becoming ubiquitous, Guardnel acts as an ethical gatekeeper, redacting Personally Identifiable Information (PII) at the edge to ensure zero-trust compliance. Built for the **Vision Agents: Alpha Protocol Hackathon**, it leverages ultra-low latency SDKs to solve the "Privacy Paradox".
 
 ---
 
-## 🚩 THE CHALLENGE: BIOMETRIC VULNERABILITY
+### 🚩 THE CHALLENGE: BIOMETRIC VULNERABILITY
 As AI agents move from static image analysis to real-time video understanding, they capture massive amounts of sensitive data.
 * **Privacy Leakage**: Unmasked biometric data is often transmitted to the cloud without user consent.
 * **Latency Barriers**: Traditional redaction methods are too slow for real-time interaction.
@@ -18,7 +18,7 @@ As AI agents move from static image analysis to real-time video understanding, t
 
 ---
 
-## 💡 THE SOLUTION: THE PRIVACY FIREWALL
+### 💡 THE SOLUTION: THE PRIVACY FIREWALL
 Guardnel is a multi-modal agent that "watches" the video stream, "understands" the ethical context, and "enforces" privacy protocols instantly.
 
 ### **The Value Proposition**
